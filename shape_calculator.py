@@ -1,7 +1,4 @@
-def shape_calculator():
-    pass
-
-
+from math import floor
 class Rectangle:
 
     def __init__(self, initial_width, initial_height):
@@ -42,7 +39,7 @@ class Rectangle:
         pass
 
     def get_amount_inside(self, other_shape):
-        return self.width // other_shape.width * self.height // other_shape.height
+        return floor((self.width / other_shape.width) * (self.height / other_shape.height))
 
     def __str__(self):
         return f"Rectangle(width={self.width}, height={self.height})"
