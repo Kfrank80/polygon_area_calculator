@@ -20,8 +20,8 @@ def shape_calculator():
     rect.set_height(8)
     rect.set_width(16)
     print(rect.get_amount_inside(sq))
-    rectang = Rectangle(51, 1)
-    print(rectang.get_picture())
+    rectangle = Rectangle(51, 1)
+    print(rectangle.get_picture())
     pass
 
 
